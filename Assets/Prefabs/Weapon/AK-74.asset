@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a690602586108aa41a9bb8adeff73420, type: 3}
+  m_Name: AK-74
+  m_EditorClassIdentifier: 
+  Name: AK-74
+  Id: 101
+  dm: 25
+  startTimeBtwShot: 0.2
+  baseMods:
+  - typeMod: 6
+    basePrefab: {fileID: 5793771602489119686, guid: 16854d800bb1f75439a92e8c0c0aba1b,
+      type: 3}
+  - typeMod: 8
+    basePrefab: {fileID: 8032025404480467841, guid: c84ce0e715b42284cadc73bc76ef525e,
+      type: 3}
+  - typeMod: 7
+    basePrefab: {fileID: 7491758340384318341, guid: 9600d39e90004064ab376f6ff6d9f270,
+      type: 3}
+  - typeMod: 0
+    basePrefab: {fileID: 1465324378600202906, guid: ea1baeaa219003a4587aec63a575f063,
+      type: 3}
+  - typeMod: 1
+    basePrefab: {fileID: 3498928490375929087, guid: e081730aec1d93041b68b9c0fbecc870,
+      type: 3}
+  - typeMod: 2
+    basePrefab: {fileID: 5147628563807338485, guid: 8feb0da96e024e5488c615f0c014c44e,
+      type: 3}
+  - typeMod: 4
+    basePrefab: {fileID: 8646187309728996367, guid: 9356734c0fdee2f45a5899fd8037b288,
+      type: 3}
+  pointMods:
+  - {x: 0, y: 0.09099963, z: 0.15299988}
+  - {x: 0.066, y: 0.17899969, z: 0.9069998}
+  - {x: 0.073, y: 0.10099962, z: 0.17799997}
+  - {x: 0.075, y: 0.029, z: 1.016}
+  - {x: 0.045, y: -0.0030002594, z: 0.12199998}
+  - {x: 0.055, y: -0.005000353, z: -0.0010000467}
+  - {x: 0, y: -0.23200035, z: 0.74899995}
+  soundShoot: {fileID: 0}
+  soundSpusk: {fileID: 0}
+  ammo: 5
+  verticalRecoil: 2
+  verticalRecoilSit: 1

@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class ListBaseMod
 {
-    private List<BaseModWeapon> baseMods;
-    private List<Vector3> pointMods;
+    private List<BaseModWeapon> baseMods = new List<BaseModWeapon>();
+    private List<Vector3> pointMods = new List<Vector3>();
 
     public void Add(BaseModWeapon _base, Vector3 _vector)
     {

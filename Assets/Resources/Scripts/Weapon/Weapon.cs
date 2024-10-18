@@ -11,4 +11,5 @@ public class Weapon : ScriptableObject
     [Header("Fight Specifications")]
     public float dm;
     public float startTimeBtwShot;
+
 }
