@@ -18,34 +18,48 @@ MonoBehaviour:
   startTimeBtwShot: 0.2
   baseMods:
   - typeMod: 6
+    isIKMod: 0
+    nameIKPoint: IK
     basePrefab: {fileID: 5793771602489119686, guid: 16854d800bb1f75439a92e8c0c0aba1b,
       type: 3}
   - typeMod: 8
+    isIKMod: 0
+    nameIKPoint: IK
     basePrefab: {fileID: 8032025404480467841, guid: c84ce0e715b42284cadc73bc76ef525e,
       type: 3}
   - typeMod: 7
+    isIKMod: 0
+    nameIKPoint: IK
     basePrefab: {fileID: 7491758340384318341, guid: 9600d39e90004064ab376f6ff6d9f270,
       type: 3}
   - typeMod: 0
+    isIKMod: 1
+    nameIKPoint: IK
     basePrefab: {fileID: 1465324378600202906, guid: ea1baeaa219003a4587aec63a575f063,
       type: 3}
   - typeMod: 1
+    isIKMod: 1
+    nameIKPoint: IK
     basePrefab: {fileID: 3498928490375929087, guid: e081730aec1d93041b68b9c0fbecc870,
       type: 3}
   - typeMod: 2
+    isIKMod: 0
+    nameIKPoint: IK
     basePrefab: {fileID: 5147628563807338485, guid: 8feb0da96e024e5488c615f0c014c44e,
       type: 3}
   - typeMod: 4
+    isIKMod: 0
+    nameIKPoint: IK
     basePrefab: {fileID: 8646187309728996367, guid: 9356734c0fdee2f45a5899fd8037b288,
       type: 3}
   pointMods:
-  - {x: 0, y: 0.09099963, z: 0.15299988}
-  - {x: 0.066, y: 0.17899969, z: 0.9069998}
-  - {x: 0.073, y: 0.10099962, z: 0.17799997}
-  - {x: 0.075, y: 0.029, z: 1.016}
-  - {x: 0.045, y: -0.0030002594, z: 0.12199998}
-  - {x: 0.055, y: -0.005000353, z: -0.0010000467}
-  - {x: 0, y: -0.23200035, z: 0.74899995}
+  - {x: 0, y: 3.1, z: 1.31}
+  - {x: 0.066, y: 3.188, z: 2.064}
+  - {x: 0.073, y: 3.1, z: 1.31}
+  - {x: 0.075, y: 3.038, z: 2.173}
+  - {x: 0.045, y: 3.006, z: 1.279}
+  - {x: 0.055, y: 3.004, z: 1.156}
+  - {x: 0, y: 2.777, z: 1.906}
   soundShoot: {fileID: 0}
   soundSpusk: {fileID: 0}
   ammo: 5

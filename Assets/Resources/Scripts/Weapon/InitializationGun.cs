@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class InitializationGun : MonoBehaviour
 {
+    private ListTransformsIK _listIK = new ListTransformsIK();
     private TypeBaseMod[] _types = new TypeBaseMod[8]
     {
         TypeBaseMod.Guard,
@@ -28,7 +29,16 @@ public class InitializationGun : MonoBehaviour
             {
                 if ((_bMod = _list.GetMod(_types[i])) != null)
                 {
-                    Instantiate(_bMod.basePrefab, transform);
+                    GameObject _gObj = Instantiate(_bMod.basePrefab, transform) as GameObject;
+
+                    if (_bMod.isIKMod)
+                        foreach (Transform t in _gObj.GetComponentsInChildren<Transform>())
+                            if (t.name == _bMod.nameIKPoint)
+                            {
+                                _listIK.Add(t, _bMod.typeMod);
+                                Debug.Log("f");
+                            }
+                                
                 }  
             }  
         }
@@ -37,6 +47,8 @@ public class InitializationGun : MonoBehaviour
             Delete();
         }
     }
+
+    public ListTransformsIK GetPointIK() => _listIK;
 
     public void Delete() => Destroy(this);
 }

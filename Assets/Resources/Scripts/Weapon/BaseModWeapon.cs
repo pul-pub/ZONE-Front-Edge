@@ -8,6 +8,8 @@ public enum TypeBaseMod { Handguard, Handle, Support, Muffler, Stor, Aim, Box, G
 public class BaseModWeapon
 {
     public TypeBaseMod typeMod;
+    public bool isIKMod = false;
+    public string nameIKPoint = "IK";
 
     public Object basePrefab;
 }
