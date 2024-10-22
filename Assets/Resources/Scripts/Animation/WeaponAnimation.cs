@@ -12,12 +12,13 @@ public class WeaponAnimation : MonoBehaviour
     [SerializeField] private Transform weaponPoint;
 
     private ListTransformsIK _listIK;
-    private Transform[] listTargets = new Transform[2];
+    private Transform[] listTargets = new Transform[3];
 
     private void Update()
     {
         handL.position = listTargets[0].position;
         handR.position = listTargets[1].position;
+        listTargets[2].localPosition = weaponPoint.localPosition;
     }
 
     public void SetListIK(ListTransformsIK _list)
@@ -26,5 +27,6 @@ public class WeaponAnimation : MonoBehaviour
 
         listTargets[0] = _listIK.GetTransform(TypeBaseMod.Handguard);
         listTargets[1] = _listIK.GetTransform(TypeBaseMod.Handle);
+        listTargets[2] = _listIK.GetTransform(TypeBaseMod.Box);
     }
 }

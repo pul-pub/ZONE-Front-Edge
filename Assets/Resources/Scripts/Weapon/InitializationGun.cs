@@ -20,6 +20,7 @@ public class InitializationGun : MonoBehaviour
     public void Init(ListBaseMod _list)
     {
         BaseModWeapon _bMod;
+        _listIK.Add(transform, TypeBaseMod.Box);
 
         if ((_bMod = _list.GetMod(TypeBaseMod.Box)) != null)
         {
@@ -32,13 +33,13 @@ public class InitializationGun : MonoBehaviour
                     GameObject _gObj = Instantiate(_bMod.basePrefab, transform) as GameObject;
 
                     if (_bMod.isIKMod)
+                    {
                         foreach (Transform t in _gObj.GetComponentsInChildren<Transform>())
+                        {
                             if (t.name == _bMod.nameIKPoint)
-                            {
                                 _listIK.Add(t, _bMod.typeMod);
-                                Debug.Log("f");
-                            }
-                                
+                        }    
+                    }           
                 }  
             }  
         }

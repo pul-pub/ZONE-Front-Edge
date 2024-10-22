@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ListTransformsIK
 {
+    private Transform weapon;
     private List<Transform> transforms = new List<Transform>();
     private List<TypeBaseMod> typeMod = new List<TypeBaseMod>();
 
