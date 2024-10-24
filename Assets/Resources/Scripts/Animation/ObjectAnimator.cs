@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ObjectAnimator
 {
-    IEnumerator MoveAnimation(AnimationPoint[] listPoints, float speedAnimation = 3f, float _accuracy = 0.0001f)
+    public IEnumerator MoveAnimation(AnimationPoint[] listPoints, float speedAnimation = 3f, float _accuracy = 0.0001f)
     {
         for (int i = 0; i < listPoints.Length; i++)
         {
